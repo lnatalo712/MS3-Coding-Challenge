@@ -1,16 +1,19 @@
 # MS3-Coding-Challenge
 
-# The purpose of this repository is to create a java application that consumes a CSV file and seperates the "good" data from the "bad"
+# Purpose 
+The purpose of this repository is to create a java application that consumes a CSV file and seperates the "good" data from the "bad"
 data. The good data will then be inserted into a SQLite database and table. While the bad data will then be written to a new CSV file.
 Bad data is considered any entry that is missing a data element or that does not match the column count. Finally, once all of the data
 has been processed, statics of how many records were received, how many records were successful, and how many records failed will be
 written to a log file.
 
-# In order to get this app running developers will simply need to download the java file, database file, and CSV file in this 
+# Setup 
+In order to get this app running developers will simply need to download the java file, database file, and CSV file in this 
 repository, have a java environment set up on their pc, and have sqlite installed on their pc. The program drops and creates the 
 table at the beginning of each run so you don't need to worry about manually resetting the table.
 
-# My approach to creating this program was to first figure out how to distinguish good data from bad data. At first I tried to detect
+# My Approach
+My approach to creating this program was to first figure out how to distinguish good data from bad data. At first I tried to detect
 empty cells in a row by checking to see if any of the cells had a value of null. For whatever reason this approach was not working,
 so instead I checked to see if any of the cells had a length of 0. I also had to see if any of the rows had more than 10 columns of
 data which I acomplished by checking the entire length of the row and seperating out any rows with a length greater or less than 10.
