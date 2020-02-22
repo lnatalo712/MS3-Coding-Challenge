@@ -23,7 +23,7 @@ connection to the database file I had created. Next, I had functions to create a
 These two functions were run at the beginning of the program everytime in order to start with a blank table at the beginning of each
 run. This design was created to ensure that the program could be rerun without having to manually empty out the table or create a brand
 new table before every run. The last function I had was an insert function which I used to insert all of the good data into the SQLite
-table. One design choice I ran into while designing the create table functioon was deciding to make column C the primary key for the
+table. One design choice I ran into while designing the create table function was deciding to make column C the primary key for the
 table. I originally made columns A and B the primary key but there happened to be a good mount of repeat first and last name
 combinations, so I switched the primary key to column C which ended up having only one repeat value. If I were allowed to create an
 extra column in the table I would have made an ID column to give each good entry its own unique ID number. I also gave each column the
