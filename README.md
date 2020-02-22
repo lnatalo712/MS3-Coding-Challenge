@@ -9,7 +9,7 @@ written to a log file.
 
 # Setup 
 In order to get this app running developers will simply need to download the java file, database file, and CSV file in this 
-repository, have a java environment set up on their pc, and have sqlite installed on their pc. The program drops and creates the 
+repository, have a java environment set up on their pc, and have SQLite installed on their pc. The program drops and creates the 
 table at the beginning of each run so you don't need to worry about manually resetting the table.
 
 # My Approach
