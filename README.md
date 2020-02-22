@@ -30,4 +30,4 @@ extra column in the table I would have made an ID column to give each good entry
 "not null" constraint because none of the good entries should have a null column. Finally, I have no experience with log files, so I did
 some research into how to create one and populate it with certain statistics but I was unsuccesful in getting that part of the project
 working. Instead I used three counters to keep track of the total entries, the total good entries, and the total bad entries and 
-printed them out at the end of the program.
+printed them out at the end of the program. This CSV file takes about 20 to 22 minutes to run.
